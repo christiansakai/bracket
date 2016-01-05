@@ -1,0 +1,16 @@
+{% raw %}
+<div ng-controller="GroupInviteCtrl">
+  <h2>Invite your friends via email</h2>
+  <hr />
+  <div ng-show="responseText" ng-class="status ? 'alert-success' : 'alert-danger'" class='alert ng-cloak'>{{ responseText }}</div>
+  <form ng-submit="submit()" name="groupInviteForm" role="form" method="post" style="max-width: 420px;" novalidate><br>
+    <div class="form-group" ng-class="{ 'error' : groupInviteForm.email.$invalid }">
+      <a class="cs_import pull-right">Add from Email Address Book</a>
+      <label for='emailList'>Friend Emails</label>
+      <textarea style='width:420px; height: 130px;' ng-model="emailList" name="emailList" placeholder="Comma-separated friend's emails here" class="form-control"></textarea>
+      <small>sperate multiple emails with a comma</small>
+    </div>
+    <button ng-disabled="groupInviteForm.$pristine" type="submit" class="btn btn-primary">Invite</button>
+  </form>
+</div>
+{% endraw %}

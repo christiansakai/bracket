@@ -1,0 +1,62 @@
+{% extends "../layout.html" %}
+
+{% block title %}
+Manage Group {{group.name}}
+{% endblock%}
+
+{% block content %}
+
+<div class="container" ng-controller="GroupManageCtrl">
+  <div class='row'>
+    {% if error_flash %}
+      <div class='alert alert-danger'>{{error_flash}}</div>
+    {% else %}
+    <div class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'>
+      <h1 style='margin-bottom: 20px;'>{{group.name}}</h1>
+      {% if members.length > 0 %}
+      <table class='table table-striped'>
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Nickname</th>
+            <th>Bracket</th>
+            <th>Score</th>
+            <th>Pct'ile</th>
+            <!-- <th>Actions</th> -->
+          </tr>
+        </thead>
+        <tbody>
+        {% for member in members %}
+            <tr>
+              <td>{{loop.index}}</td>
+              <td>{{member.display_name}}</td>
+              <td>
+                {% if member.groups && member.groups[0] && member.groups[0].bracket %}
+                  <a href="/code_bracket/{{member.groups[0].bracket.id}}">{{ member.groups[0].bracket.name }}</a>
+                {% endif %}
+              </td>
+              <td>
+                {% if member.groups && member.groups[0] && member.groups[0].bracket && member.groups[0].bracket.score %}
+                  {{ member.groups[0].bracket.score }}
+                {% endif %}
+              </td>
+              <td>
+                {% if member.groups && member.groups[0] && member.groups[0].bracket && member.groups[0].bracket.ptile %}
+                  {{ member.groups[0].bracket.ptile }}%
+                {% endif %}
+              </td>
+              <!-- <td><a href="/code_bracket/{{bracket._id.toString()}}/edit" class='btn btn-sm btn-default'>Edit</a> <a  class='btn btn-sm btn-default' href="/code_bracket/{{bracket._id.toString()}}/delete">Delete</a></td> -->
+            </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <a class="btn btn-warning noround" href="/groups/{{group.id}}/settings">Settings</a>
+      {% else %}
+        <p>Your group doesn't have any members yet. <a href='/groups/{{group._id.toString()}}/settings'>Invite</a> your friends from the settings page</p>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% endblock %}

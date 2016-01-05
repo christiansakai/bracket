@@ -1,0 +1,116 @@
+.navbar-brand {
+  /*  font-weight: bold;*/
+  color: blue; }
+
+.navbar {
+  background: #C3440D;
+  border-color: #C3440D;
+  border-radius: 0;
+  min-height: 10px; }
+
+.navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a {
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px "Nexa Black", Arial;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0px;
+  padding: 20px 15px;
+  padding-top: 23px; }
+  .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:hover {
+    color: #000; }
+
+.dropdown-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-nav .navbar-nav > .active > a {
+  -webkit-font-smoothing: antialiased;
+  background-color: inherit;
+  text-transform: uppercase;
+  color: black; }
+  .navbar-inverse .navbar-nav > .active > a:hover, .navbar-nav .navbar-nav > .active > a:hover {
+    color: #000;
+    background-color: inherit; }
+
+.text-muted {
+  color: #999;
+  /*  text-transform: uppercase;*/
+  font-size: 14px;
+  text-align: center; }
+
+.home .text-muted {
+  color: #ccc;
+  text-align: left; }
+  .home .text-muted a {
+    color: #fff; }
+
+.btn-codersbracket {
+  background-color: #FFCE62;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Nexa Black", Arial;
+  font-weight: normal;
+  border: 0;
+  border-radius: 0;
+  padding: 15px 34px;
+  padding-top: 23px;
+  text-transform: uppercase; }
+  .btn-codersbracket:hover {
+    background-color: #d2a950; }
+
+.noround {
+  border-radius: 0 !important; }
+
+.noright {
+  border-right: 0 !important; }
+
+.dropdown-submenu {
+  position: relative; }
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px; }
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block; }
+
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px; }
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #ffffff; }
+
+.dropdown-submenu.pull-left {
+  float: none; }
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px; }
+
+#howToVideoModal .modal-dialog {
+  width: 950px; }
+#howToVideoModal .modal-content {
+  border-radius: 0;
+  background-color: #000;
+  text-align: center; }
+
+/*# sourceMappingURL=bootstrap_overrides.css.map */

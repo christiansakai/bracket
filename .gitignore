@@ -1,0 +1,22 @@
+lib-cov
+lcov.info
+*.seed
+*.log
+*.dat
+*.out
+*.pid
+*.gz
+**/*.DS_Store
+
+pids
+logs
+results
+build
+.grunt
+
+node_modules
+# public/javascripts
+# public/stylesheets/style.css
+# public/stylesheets/bootstrap_overrides.css
+
+*.sass-cache*

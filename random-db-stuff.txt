@@ -1,0 +1,8 @@
+mongodb://heroku:gIWQpSQqvZn9rqp4Ij3f3ojuh-BLW0q3uyG__jf3GBFjIBwZtMqblrriwwOzZPD27EJ2BnI4MGwQVVexxv6MfQ@candidate.0.mongolayer.com:10110/app22526565
+mongodb://heroku2:fullstackfullstack@candidate.0.mongolayer.com:10110/app22526565
+mongodb://heroku:gIWQpSQqvZn9rqp4Ij3f3ojuh-BLW0q3uyG__jf3GBFjIBwZtMqblrriwwOzZPD27EJ2BnI4MGwQVVexxv6MfQ@candidate.0.mongolayer.com:10110/app22526565
+mongodb://<user>:<password>@candidate.0.mongolayer.com:10110,candidate.11.mongolayer.com:10110/app22526565
+
+
+
+mongodb://heroku:gIWQpSQqvZn9rqp4Ij3f3ojuh-BLW0q3uyG__jf3GBFjIBwZtMqblrriwwOzZPD27EJ2BnI4MGwQVVexxv6MfQ@candidate.0.mongolayer.com:10110,candidate.11.mongolayer.com:10110/app22526565

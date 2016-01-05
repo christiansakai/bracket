@@ -1,0 +1,29 @@
+{% extends "default.html" %}
+
+{% block content %}
+  <table border="0" cellpadding="20" cellspacing="0" width="100%">
+    <tr>
+      <td valign="top" class="bodyContent">
+        <div mc:edit="std_content00">
+          <h2 class="h2">Complete your Coder's Bracket Registration</h2>
+          Please confirm your email address by clicking on the button below. Remember, brackets made by unconfirmed accounts won't be eligible for a prize. Click the link below!
+          <br />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" style="padding-top:0;">
+        <table border="0" cellpadding="15" cellspacing="0" class="templateButton">
+          <tr>
+            <td valign="middle" class="templateButtonContent">
+              <div mc:edit="std_content01">
+                <a href="{{verify_url}}" target="_blank"><strong>Confirm Your Email Address</strong></a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+{% endblock %}

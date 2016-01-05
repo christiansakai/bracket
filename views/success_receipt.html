@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Login at CodersBracket
+{% endblock%}
+
+{% block content %}
+  <div class='row' style='margin-bottom: 20px'>
+    <div class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'>
+  
+    <h1>Donation Submitted</h1>
+    <hr>
+    <p>Thanks {{user.name.first}} for your generous donation. Your donation has been recorded in your account!</p>
+    
+    <p>You are now eligible for all the "donors-only" awards. We will be in touch with your shortly after the tournament.</p>
+    
+    <a href='/'>Go back to Home</a>.
+    </div>
+  </div>  
+    {#
+    <span class="payment-errors"></span>
+
+    <div class="form-row">
+      <label>
+        <span>Payment Status</span>
+        <span>{{charge.paid}}</span>
+      </label>
+    </div>
+
+
+    <div class="form-row">
+      <label>
+        <span>Currency</span>
+        <span>{{charge.currency}}</span>
+      </label>
+    </div>
+
+    <div class="form-row">
+      <label>
+        <span>Amount</span>
+        <span>{{charge.amount}}</span>
+      </label>
+    </div>
+    <div class="form-row">
+      <label>
+        <span>Card Type</span>
+        <span>{{charge.card.type}}</span>
+      </label>
+    </div>
+    #}
+    
+{% endblock %}
